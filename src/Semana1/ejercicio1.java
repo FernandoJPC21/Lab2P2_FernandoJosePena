@@ -12,36 +12,42 @@ public class ejercicio1 {
       Scanner input = new Scanner(System.in);
       int opcion;
       System.out.println("\nACTIVDAD 1\n");
-      System.out.println("ingrese opcion:");
+      
+      do{
+      
+          System.out.println("\n\ningrese opcion:");
       System.out.println("1.Llenar el arreglo.\n2.Ordenar de forma burbuja.\n3.Busqueda lineal.\n4.Busqueda binaria.\n5.salir del sistema.");
       opcion=input.nextInt();
   
-    do{
+    
         switch(opcion){
             case 1:
-                int cantidad=1000;
-                boolean llenar=false;
-                int numeros[]=new int[1000];
-                
-                if(llenar=false){
-                    for(int i=0;i<numeros.length-1;i++){
-                        llenar=true;
-                        numeros[i]=(int) (Math.random()*cantidad);
-                        for(int x=0;x<i;x++){
-                            if(numeros[i]==numeros[x]){
-                                i--;
-                                System.out.println("hola mundo");
-                            }
+                int limite=100;
+               int []espacios=new int [5];
+               for(int i=0;i<espacios.length;i++){
+                   for(int j=0;j<=limite;j++){
+                        espacios[i]=(int) (Math.random()*limite);
+                        
                         }
-                    } 
-               
-                }
-               
-                 
-      
-      
-    break;
+                   }
+                
+                    
+                 break;
             case 2:
+                System.out.println("Ordenamiento burbuja\n\n");
+                
+                
+                break;
+            case 3:
+                System.out.println("\nbusqueda Lineal\n\n");
+                System.out.println("ingrese el numero que quiere buscar:");
+                int buscar;
+                buscar = input.nextInt();
+                
+                
+                
+                
+                break;
    }
   }while(opcion!=5); 
     }
