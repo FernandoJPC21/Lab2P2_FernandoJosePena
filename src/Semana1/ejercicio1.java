@@ -30,16 +30,18 @@ public class ejercicio1 {
                         for(int x=0;x<i;x++){
                             if(numeros[i]==numeros[x]){
                                 i--;
+                                System.out.println("hola mundo");
                             }
                         }
                     } 
-                   
+               
                 }
                
                  
       
       
     break;
+            case 2:
    }
   }while(opcion!=5); 
     }
