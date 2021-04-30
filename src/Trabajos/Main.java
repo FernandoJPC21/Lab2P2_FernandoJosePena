@@ -13,7 +13,7 @@ public class Main {
     
      public Computadora agregarElemento(int NumeroSerie){
      for(Computadora B:computadora){
-         if(B.getModelo()==(NumeroSerie)){
+         if(B.getModelo().equals(NumeroSerie)){
              return B;
          }
      }
